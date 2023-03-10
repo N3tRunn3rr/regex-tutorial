@@ -1,10 +1,20 @@
-# Title (replace with your title)
+# Regex Tutorial
 
-Introductory paragraph (replace this with your text)
+As a web dev student, I have created a tutorial that explains some specific components of regex so that I can better understand them. I hope they help you understand the search patterns of regex as well.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+A regex or regular expression is a sequence of characters that define a search pattern. Usually this pattern is used by string searching algorithms for "find" or "find and replace" operations on strings, or for input validation. It is a technique developed in theoretical computer science and formal language theory. 
+Most characters stand for themselves, and match the corresponding character in the input string, and the simplest form of regex is actual literal text. For example, the regex "abc" matches the string "abc".
+- We will look at the following components of regex:
+    - Anchors
+    - Quantifiers
+    - Grouping Constructs
+    - Bracket Expressions
+    - Character Classes
+    - The OR Operator
+    - Flags
+    - Character Escapes
 
 ## Table of Contents
 
@@ -73,7 +83,21 @@ Briefly summarize the regex you will be describing and what you will explain. In
 
 ### Bracket Expressions
 
+- Brackets indicate a set of characters to match. You can use a bracket expression to match any single character from a list of characters, and you can use a hyphen to specify a range of characters.
+    - ex. : 'elephant'.match(/[abcd]/) will return 'a'
+- You can use a caret (^) to negate what is between the brackets. This means that the bracket expression will match any character that is not in the list.
+    - kind of like an inverse of the brackets.
+- You can use a hyphen (-) to specify a range of characters. For example, [a-z] matches any lowercase letter.
+- You can use a backslash (\) to escape a hyphen (-) or a closing bracket (]). For example, [a\-z] matches a hyphen (-) or a lowercase letter.
+    - remember that these character sets are case sensitive, unless you set the i flag
+- Curly braces are used to specify the number of characters to match. For example, [a-z]{3} matches three lowercase letters.
+    - you can use these in conjunction with a comma to specify more than one amount of characters to match.
+- Parentheses represent remembered groups or matches. For example, ([a-z]{3}) matches three lowercase letters and remembers the match.
+
+
 ### Character Classes
+
+
 
 ### The OR Operator
 
