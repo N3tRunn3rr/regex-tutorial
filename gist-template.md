@@ -160,6 +160,7 @@ Most characters stand for themselves, and match the corresponding character in t
 
 Kenji Fleming
 Hi I am a student in the UCF full stack coding bootcamp and I hope this tutorial on some of the basics of regex was helpful. I found some great resources online for extra information and I will link them below. I hope you enjoyed this tutorial and I hope you have a great day!
+* [GitHub](https://github.com/N3tRunn3rr)
 
 ## Resources
 
